@@ -1,0 +1,226 @@
+.first {
+  font-size: 30px;
+  font-weight: 700;
+  width: 500px;
+  position: absolute;
+  left: 30%;
+  top: -50px;
+  animation: dropDown 1s forwards, away 1s 4s forwards, colour 1s 8s forwards, lengitKiri 1s 12s forwards;
+}
+
+.shape1 img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: -50px;
+  animation: rotasi 4s infinite, dropDown 1s forwards, away2 1s 4s forwards, lengitKiri 1s 12s forwards;
+}
+
+.second {
+  font-size: 30px;
+  width: 500px;
+  font-weight: 700;
+  position: absolute;
+  left: 30%;
+  top: -80px;
+  animation: dropDown2 1s 1s forwards, away 1s 5s forwards, colour2 1s 9s forwards,lengitKanan 1s 12s forwards;
+}
+
+.shape2 img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: -80px;
+  animation: rotasi 4s infinite, dropDown2 1s 1s forwards, away2 1s 5s forwards,lengitKanan 1s 12s forwards;
+}
+
+.third {
+  font-size: 30px;
+  width: 500px;
+  font-weight: 700;
+  position: absolute;
+  left: 30%;
+  top: -130px;
+  animation: dropDown3 1s 2s forwards, away 1s 6s forwards, colour3 1s 10s forwards, lengitKiri 1s 12s forwards;
+}
+
+.shape3 img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: -130px;
+  animation: rotasi 4s infinite, dropDown3 1s 2s forwards, away2 1s 6s forwards, lengitKiri 1s 12s forwards;
+}
+
+.fourth {
+  font-size: 30px;
+  width: 500px;
+  font-weight: 700;
+  position: absolute;
+  left: 30%;
+  top: -180px;
+  animation: dropDown4 1s 3s forwards, away 1s 7s forwards, colour4 1s 11s forwards,lengitKanan 1s 12s forwards;
+}
+
+.shape4 img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: -180px;
+  animation: rotasi 4s infinite, dropDown4 1s 3s forwards, away2 1s 7s forwards,lengitKanan 1s 12s forwards;
+}
+
+.fifth {
+  position: absolute;
+  left: 40%;
+  top: 8%;
+  font-size: 0px;
+  animation: large-teks 1s 13s forwards, teksRotate 1s 17s forwards, ninja 1s 18s forwards;
+}
+
+.sixth {
+  position: absolute;
+  left: 38%;
+  top: 30%;
+  font-size: 0px;
+  animation: large-teks 1s 13s forwards, teksRotate 1s 17s forwards, ninja 1s 18s forwards;
+}
+
+.box {
+  position: absolute;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: auto;
+  text-align: center;
+  justify-items: center;
+  top: 6%;
+  left: 30%;
+  animation: boxAppear 1s 14s forwards,moveDown 1s  15s forwards, moveMid 1s 16s forwards, teksRotate 1s 17s forwards, ninja 1s 18s forwards;
+}
+
+@keyframes rotasi {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dropDown {
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes dropDown2 {
+  100% {
+    top: 80px;
+  }
+}
+
+@keyframes dropDown3 {
+  100% {
+    top: 130px;
+  }
+}
+
+@keyframes dropDown4 {
+  100% {
+    top: 180px;
+  }
+}
+
+@keyframes away {
+  100% {
+    left: 20%;
+  }
+}
+
+@keyframes away2 {
+  100% {
+    left: 70%;
+  }
+}
+
+@keyframes colour {
+  100% {
+    color: lightblue;
+  }
+}
+
+@keyframes colour2 {
+  100% {
+    color: #ade6c8;
+  }
+}
+
+@keyframes colour3 {
+  100% {
+    color: #c6ade6;
+  }
+}
+
+@keyframes colour4 {
+  100% {
+    color: #e6add5;
+  }
+}
+
+@keyframes lengitKiri {
+  100% {
+    left: -30%;
+  }
+}
+
+@keyframes lengitKanan {
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes large-teks {
+  100% {
+    font-size: 50px;
+  }
+}
+
+@keyframes moveDown {
+  100% {
+    top: 20%;
+    color: black;
+    border: 1px solid black;
+  }
+}
+
+@keyframes moveMid {
+  100% {
+    top: 20%;
+    left: 45%;
+    color: black;
+    border: 1px solid black;
+  }
+}
+
+@keyframes boxAppear {
+  100% {
+    color: black;
+    border: 1px solid black;
+  }
+}
+
+@keyframes teksRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ninja {
+  100% {
+    transform: scale(0.5);
+    color: white;
+    border: white;
+  }
+}
